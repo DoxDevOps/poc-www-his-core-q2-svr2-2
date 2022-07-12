@@ -88,10 +88,8 @@ for site_id in cluster['site']:
                     "recipient": recipient,
                     "message": msgx
                 }
-                try:
-                    alert("http://sms-api.hismalawi.org/v1/sms/send", params)
-                except Exception as e:
-                    print(e)
+                alert("http://sms-api.hismalawi.org/v1/sms/send", params)
+                
 
             # close the while loop
             count = 3
@@ -109,10 +107,8 @@ for site_id in cluster['site']:
                         "recipient": recipient,
                         "message": msg
                     }
-                    try:
-                        alert("http://sms-api.hismalawi.org/v1/sms/send", params)
-                    except Exception as e:
-                        print(e)
+                    alert("http://sms-api.hismalawi.org/v1/sms/send", params)
+                    
 
         
 
